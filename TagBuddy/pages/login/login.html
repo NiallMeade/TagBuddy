@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>TagBuddy - Login</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding id="signInPage">
+    <h3>Login to your TagBuddy account</h3>
+  
+    <div id="signInForm">
+      <ion-list>
+  
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email" [(ngModel)]="loginForm.email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="loginForm.password"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <button ion-button large block (click)="loginUser()">Login</button>
+        </ion-item>
+        
+  
+      </ion-list>
+    </div>
+  
+  
+  
+  </ion-content>

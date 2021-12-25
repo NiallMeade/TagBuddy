@@ -1,0 +1,56 @@
+<ion-content padding id="HomePage">
+
+
+<div id="logoBanner">
+  <img id="logo" src="assets/imgs/fullicon.jpeg">
+</div>
+
+
+  <div id="signInForm">
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="loginForm.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="loginForm.password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <div id="buttonDiv">
+          <button id="button" ion-button large block (click)="loginUser()">Login</button>
+        </div>
+      </ion-item>
+ 
+    </ion-list>
+  </div>
+
+  <div style="text-align: center">
+    <h5>New Here? <a style="color: rgb(0,170,189)" (click)="reg()" href="javascript:void(0);">Create an Account</a></h5>
+  </div>
+
+
+
+
+<!--
+  <div id="Form">
+ 
+
+  
+
+      <ion-item>
+        <button id="button" ion-button large block (click)="reg()">Register Account</button>
+      </ion-item>
+      
+      <ion-item>
+        <button id="button" ion-button large block (click)="login()">Sign In</button>
+      </ion-item>
+      
+
+  </div>
+-->
+
+
+</ion-content>

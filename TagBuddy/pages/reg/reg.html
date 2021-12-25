@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register an Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding id="regPage">
+<div id="logoBanner">
+  <img id="logo" src="assets/imgs/fullicon.jpeg">
+</div>
+
+
+  <div id="signInForm">
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="loginForm.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="loginForm.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="loginForm.password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating >Gender</ion-label>
+        <ion-select [(ngModel)]="loginForm.gender">
+          <ion-option value="female">Female</ion-option>
+          <ion-option value="male">Male</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <div id="buttonDiv">
+          <button id="button" ion-button large block (click)="regUser()">Register Account</button>
+        </div>
+      </ion-item>
+ 
+    </ion-list>
+  </div>
+</ion-content>

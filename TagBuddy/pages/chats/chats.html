@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{chatuser?.name}}</ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="chatsPage" padding>
+
+  <ion-list>
+      <ion-list-header>
+        Friends
+      </ion-list-header>
+      <ion-fab top right style="padding-right:1%;">
+          <button ion-fab mini color=light (click)="addFriend()"><ion-icon name="add" ></ion-icon></button>
+      </ion-fab>
+
+
+    <ion-item  *ngFor="let friend of availableusers" (click)="goToChat(friend)">
+      <ion-avatar item-start>
+        <img src='{{getImg(friend.friend)}}'>
+      </ion-avatar>
+      <h2>{{friend.friend || "Anonymous"}} <img style="width:10px; height:10px; "src='{{getActiveStatus(friend.friend)}}'></h2> 
+      <p>{{getMostRecentMsg(friend.friend)}}</p>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

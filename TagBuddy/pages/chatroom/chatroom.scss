@@ -1,0 +1,28 @@
+page-chatroom {
+}
+
+#chatPage {
+  display: flex;
+  flex-direction: row;
+
+  .chat {
+    background-color:   rgba(16, 28, 56, 0.8);
+    border: none;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    align-self: flex-end;
+    color:white;
+  }
+
+  .chat-partner {
+    margin-left: 10%;
+    background-color:rgba(0,171,189, 0.8);
+    color:white;
+  }
+
+  #button{
+    background-color: rgb(16, 28, 56);
+  }
+
+}
